@@ -65,11 +65,12 @@ const Dashboard = () => {
         <Box>
           <Button
             sx={{
-              backgroundColor: theme.palette.secondary.light,
+              backgroundColor: theme.palette.secondary[300],
               color: theme.palette.background.alt,
               fontSize: "14px",
               fontWeight: "bold",
               padding: "10px 20px",
+              "&:hover": {background: "grey"}
             }}
           >
             <DownloadOutlined sx={{ mr: "10px" }} />
