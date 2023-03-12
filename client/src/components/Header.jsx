@@ -4,7 +4,7 @@ import React from "react";
 const Header = ({ title, subtitle }) => {
   const theme = useTheme();
 
-  const message = "thisi is me."
+  const message = "this is me."
   
   console.log(message);
 
