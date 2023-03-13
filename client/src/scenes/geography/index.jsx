@@ -50,14 +50,15 @@ const Geography = () => {
               },
               tooltip: {
                 container: {
-                  color: theme.palette.primary.main,
+                  color: theme.palette.grey[800], // hard to see
                 },
               },
             }}
             features={geoData.features}
+            colors="BrBG"
             margin={{ top: 0, right: 0, bottom: 0, left: -50 }}
             domain={[0, 60]}
-            unknownColor="#666666"
+            unknownColor="#666"
             label="properties.name"
             valueFormat=".2s"
             projectionScale={150}
@@ -77,7 +78,7 @@ const Geography = () => {
                 itemHeight: 18,
                 itemDirection: "left-to-right",
                 itemTextColor: theme.palette.secondary[200],
-                itemOpacity: 0.85,
+                itemOpacity: 0.9,
                 symbolSize: 18,
                 effects: [
                   {
