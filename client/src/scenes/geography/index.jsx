@@ -78,13 +78,13 @@ const Geography = () => {
                 itemHeight: 18,
                 itemDirection: "left-to-right",
                 itemTextColor: theme.palette.secondary[200],
-                itemOpacity: 0.9,
+                itemOpacity: 0.8,
                 symbolSize: 18,
                 effects: [
                   {
                     on: "hover",
                     style: {
-                      itemTextColor: theme.palette.background.alt,
+                      itemTextColor: theme.palette.primary,
                       itemOpacity: 1,
                     },
                   },
