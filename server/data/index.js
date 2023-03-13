@@ -18041,10 +18041,10 @@ export const dataUser = [
   },
   {
     _id: "63701cc1f03239b7f700000e",
-    name: "Shelly",
-    email: "swelbeck12@ycombinator.com",
+    name: "Alec",
+    email: "alec12@ycombinator.com",
     password: "RSjzmAjnq",
-    city: "Sangoleng",
+    city: "Samscity",
     state: null,
     country: "ID",
     occupation: "Pharmacist",
