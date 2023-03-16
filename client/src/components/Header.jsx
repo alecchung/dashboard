@@ -4,10 +4,6 @@ import React from "react";
 const Header = ({ title, subtitle }) => {
   const theme = useTheme();
 
-  const message = "this is me."
-  
-  console.log(message);
-
   return (
     <Box>
       <Typography
