@@ -1,5 +1,3 @@
-// STYLE COMPONENT
-
 const { Box } = require("@mui/material");
 const { styled } = require("@mui/system");
 

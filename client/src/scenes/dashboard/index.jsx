@@ -1,4 +1,3 @@
-import React from "react";
 import FlexBetween from "components/FlexBetween";
 import Header from "components/Header";
 import {
@@ -90,7 +89,7 @@ const Dashboard = () => {
           "& > div": { gridColumn: isNonMediumScreens ? undefined : "span 12" },
         }}
       >
-        {/* ROW 1 */}
+        {/* Row 1 */}
         <StatBox
           title="Total Customers"
           value={data && data.totalCustomers}
@@ -145,7 +144,7 @@ const Dashboard = () => {
           }
         />
 
-        {/* ROW 2 */}
+        {/* Row 2 */}
         <Box
           gridColumn="span 8"
           gridRow="span 3"

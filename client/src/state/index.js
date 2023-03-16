@@ -1,5 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 
+// Sample User/Admin
 const initialState = {
   mode: "dark",
   userId: "63701cc1f03239b7f700000e",

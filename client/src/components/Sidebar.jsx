@@ -1,4 +1,3 @@
-import React from "react";
 import {
   Box,
   Divider,
@@ -130,6 +129,8 @@ const Sidebar = ({
           }}
         >
           <Box width="100%" display="flex" flexDirection="column" justifyContent="space-between">
+
+            {/* Logo / Title */}
             <Box m="1.5rem 2rem 2rem 3rem">
               <FlexBetween color={theme.palette.secondary.main}>
                 <Box display="flex" alignItems="center" gap="0.5rem">
@@ -144,6 +145,8 @@ const Sidebar = ({
                 )}
               </FlexBetween>
             </Box>
+
+            {/* Nav Items */}
             <List>
               {navItems.map(({ text, icon }) => {
                 if (!icon) {
@@ -193,6 +196,8 @@ const Sidebar = ({
                 );
               })}
             </List>
+
+            {/* User Panel */}
             <Box>
               <Divider />
               <FlexBetween textTransform="none" gap="1rem" m="1.5rem 1.5rem 1rem 2.5rem">

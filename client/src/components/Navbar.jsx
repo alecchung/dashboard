@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import {
   LightModeOutlined,
   DarkModeOutlined,
@@ -42,7 +42,9 @@ const Navbar = ({ user, isSidebarOpen, setIsSidebarOpen }) => {
       }}
     >
       <Toolbar sx={{ justifyContent: "space-between" }}>
-        {/* LEFT SIDE */}
+
+        {/* Left Side */}
+
         <FlexBetween>
           <IconButton onClick={() => setIsSidebarOpen(!isSidebarOpen)}>
             <MenuIcon />
@@ -60,7 +62,8 @@ const Navbar = ({ user, isSidebarOpen, setIsSidebarOpen }) => {
           </FlexBetween>
         </FlexBetween>
 
-        {/* RIGHT SIDE */}
+        {/* Right Side */}
+
         <FlexBetween gap="1.5rem">
           <IconButton onClick={() => dispatch(setMode())}>
             {theme.palette.mode === "dark" ? (
