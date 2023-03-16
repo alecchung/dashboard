@@ -24,6 +24,7 @@ import StatBox from "components/StatBox";
 const Dashboard = () => {
   const theme = useTheme();
   const isNonMediumScreens = useMediaQuery("(min-width: 1200px)");
+  const isNonMobile = useMediaQuery("(min-width: 800px)")
   const { data, isLoading } = useGetDashboardQuery();
 
   const columns = [
@@ -74,7 +75,7 @@ const Dashboard = () => {
             }}
           >
             <DownloadOutlined sx={{ mr: "10px" }} />
-            Download Reports
+            { isNonMobile && "Download Reports"}
           </Button>
         </Box>
       </FlexBetween>
