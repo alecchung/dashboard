@@ -102,10 +102,6 @@ const Sidebar = ({
   const theme = useTheme();
 
   useEffect(() => {
-    setIsSidebarOpen(isNonMobile ? true : false)
-  })
-
-  useEffect(() => {
     setActive(pathname.substring(1));
   }, [pathname]);
 

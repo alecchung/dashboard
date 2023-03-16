@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Box, useMediaQuery } from "@mui/material";
 import { Outlet } from "react-router-dom";
 import { useSelector } from "react-redux";
@@ -11,6 +11,10 @@ const Layout = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
   const userId = useSelector((state) => state.global.userId);
   const { data } = useGetUserQuery(userId);
+
+  useEffect(() => {
+    setIsSidebarOpen(isNonMobile ? true : false)
+  }, [isNonMobile])
 
   return (
     <Box display={isNonMobile ? "flex" : "block"} width="100%" height="100%">
