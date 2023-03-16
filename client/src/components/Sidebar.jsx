@@ -194,8 +194,8 @@ const Sidebar = ({
               })}
             </List>
             <Box>
-              <Divider/>
-              <FlexBetween textTransform="none" gap="1rem" m="1.5rem 2rem 1rem 2rem">
+              <Divider />
+              <FlexBetween textTransform="none" gap="1rem" m="1.5rem 1.5rem 1rem 2.5rem">
                 <Box
                   component="img"
                   alt="profile"
@@ -221,12 +221,12 @@ const Sidebar = ({
                   </Typography>
                 </Box>
                 <IconButton>
-                <SettingsOutlined
-                  sx={{
-                    color: theme.palette.secondary[300],
-                    fontSize: "30px ",
-                  }}
-                />
+                  <SettingsOutlined
+                    sx={{
+                      color: theme.palette.secondary[300],
+                      fontSize: "30px ",
+                    }}
+                  />
                 </IconButton>
               </FlexBetween>
             </Box>
